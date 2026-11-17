@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node dependencies
+node_modules/
+dist/
+dist-ssr/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel/
+
+# TypeScript cache
+*.tsbuildinfo
+.tsbuildinfo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+
+# Screen recording artifacts & raw WhatsApp dump (assets are organized in public/assets/)
+record_frames/
+ncr-panditji-full-preview.mp4
+WhatsApp Image *.jpeg
+WhatsApp Video *.mp4

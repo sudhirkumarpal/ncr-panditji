@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FFFDF7;
+    color: #24160F;
+    overflow-x: hidden;
+  }
+}
+
+/* Authentic Vedic Spiritual Background Textures */
+.bg-devotional-pattern {
+  background-color: #FFFDF7;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
+    radial-gradient(#EB5C2B 1px, transparent 1px),
+    radial-gradient(#F59E0B 1px, #FFFDF7 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  background-position: 0 0, 0 0, 20px 20px;
+}
+
+.bg-sandhya-temple {
+  background: radial-gradient(circle at 50% 20%, #4A0E0E 0%, #2A0606 55%, #150202 100%);
+}
+
+.bg-shree-mandala {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d97706' fill-opacity='0.06' fill-rule='evenodd'%3E%3Cpath d='M40 0l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8zM0 40l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8zM80 40l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8zM40 80l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Glowing Temple Aura */
+.vedic-halo {
+  box-shadow: 0 0 50px rgba(245, 158, 11, 0.35), 0 0 100px rgba(235, 92, 43, 0.2);
+}
+
+.vedic-halo-intense {
+  box-shadow: 0 0 60px rgba(251, 191, 36, 0.5), 0 0 120px rgba(235, 92, 43, 0.35);
+}
+
+/* Card Glow & Traditional Golden Trim */
+.vedic-card {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #EADBC7;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vedic-card:hover {
+  transform: translateY(-6px);
+  border-color: #F59E0B;
+  box-shadow: 0 20px 40px -12px rgba(235, 92, 43, 0.22), 0 0 25px rgba(245, 158, 11, 0.18);
+}
+
+/* Golden Ornamental Corners */
+.vedic-card::before,
+.vedic-card::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: #D97706;
+  opacity: 0.4;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.vedic-card::before {
+  top: 6px;
+  left: 6px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+
+.vedic-card::after {
+  bottom: 6px;
+  right: 6px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+}
+
+.vedic-card:hover::before,
+.vedic-card:hover::after {
+  opacity: 1;
+  border-color: #EB5C2B;
+}
+
+/* Shimmer Light Reflection */
+.shimmer-badge {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-badge::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, transparent 30%, rgba(255, 255, 255, 0.5) 50%, transparent 70%);
+  transform: rotate(30deg);
+  animation: shimmerSweep 4s infinite linear;
+}
+
+/* Custom Spiritual Scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF7EC;
+  border-left: 1px solid #F3E4CD;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #F59E0B 0%, #EB5C2B 100%);
+  border-radius: 6px;
+  border: 2px solid #FFF7EC;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #D97706 0%, #B8380A 100%);
+}
